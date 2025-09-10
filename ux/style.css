@@ -1,0 +1,57 @@
+/* UX/UI page styles */
+
+.ux-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ux-item {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ux-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.ux-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.ux-content {
+    padding: 2.5rem;
+}
+
+.ux-title {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.ux-description {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Detail page styles */
+.detail {
+    padding: 1rem;
+}
+
+.detail-img {
+    max-width: 100%;
+    margin: 1rem 0;
+}

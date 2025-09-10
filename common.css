@@ -1,0 +1,77 @@
+/* Common styles for all pages */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #fdfdfd;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 4rem;
+}
+
+.site-header {
+    padding: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.brand {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+.muted {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+/* Legacy detail styles - may be used in detail pages */
+.detail {
+    padding: 1rem;
+}
+
+.detail-img {
+    max-width: 100%;
+    margin: 1rem 0;
+}

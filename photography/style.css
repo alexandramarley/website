@@ -1,0 +1,32 @@
+/* Photography page styles */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        justify-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        justify-items: center;
+    }
+}

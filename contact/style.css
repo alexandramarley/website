@@ -1,0 +1,74 @@
+/* Contact page styles */
+
+.contact {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.contact-name {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin: 0 0 2rem 0;
+    color: #333;
+}
+
+.contact-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+    filter: grayscale(100%);
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-greeting {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem 0 1.5rem 0;
+    color: #333;
+}
+
+.contact-bio {
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.contact-bio p {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-section {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+    color: #333;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.contact-link {
+    color: #333;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.contact-link:hover {
+    color: #666;
+}
