@@ -4,29 +4,32 @@
     display: flex;
     flex-direction: column;
     gap: 0;
-    margin-top: 2rem;
+    margin: 0;
     align-items: center;
 }
 
 .gallery-img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    display: block;
 }
 
-/* Desktop layout */
+/* Desktop layout - horizontal scrolling single row */
 @media (min-width: 768px) {
     .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         gap: 0;
-        justify-items: center;
+        overflow-x: auto;
+        align-items: flex-start;
     }
-}
-
-@media (min-width: 1024px) {
-    .gallery {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0;
-        justify-items: center;
+    
+    .gallery-img {
+        width: auto;
+        height: 600px;
+        object-fit: cover;
+        flex: 0 0 auto;
     }
 }
